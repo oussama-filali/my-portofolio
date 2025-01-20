@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+    <div class="container">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Cache le contenu par défaut */
+        .hidden-content {
+            display: none;
+        }
+        /* Affiche le contenu lorsque le lien est activé (avec une classe ajoutée dynamiquement) */
+        .card-body.show-more .hidden-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section de présentation -->
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-md-6 text-center">
+                <div class="profile-photo">
+                    <img src="img.github.jpg" alt="Photo de profil" class="rounded-circle img-fluid">
+                </div>
+                <div class="presentation-box mt-4">
+                    <h2>hello 👨🏽‍💻🦕 .. bienvenue sur mon portefolio 🚀</h2>
+                    <p>
+                        Bonjour ! Je suis Oussama Halima-Filali, étudiant en 1ère année Prépa Bachelor IT, aspirant à me spécialiser dans le développement web/web mobile à La Plateforme. 
+                        Sur mon portfolio, vous trouverez un espace où je partage mes projets, pensées et découvertes. 
+                        N’hésitez pas à explorer et à me donner votre avis. Merci d'avance pour votre visite !
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section des projets -->
+        <div id="recettes-container" class="row">
+            <!-- Projet 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="2024-12-08_00h15_51.gif" alt="Recette 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Projet 1</h5>
+                        <p class="card-text">Site de cuisine.</p>
+                        <a href="#" class="btn btn-primary voir-plus">Voir plus</a>
+                        <div class="hidden-content">
+                            <p>Ce projet est un site web de cuisine qui propose des recettes variées, des astuces culinaires et des tutoriels vidéo. Développé avec HTML, CSS, et JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="2024-12-08_00h22_01.gif" alt="Recette 2" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Projet 2</h5>
+                        <p class="card-text">cv en ligne .</p>
+                        <a href="#" class="btn btn-primary voir-plus">Voir plus</a>
+                        <div class="hidden-content">
+                            <p>Ce projet consiste a la création d’un CV en ligne. Ce projet a été réalisé avec HTML, CSS .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="projet tictactoe.gif" alt="Recette 3" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Projet 3</h5>
+                        <p class="card-text">Jeu Tic Tac Toe.</p>
+                        <a href="#" class="btn btn-primary voir-plus">Voir plus</a>
+                        <div class="hidden-content">
+                            <p>Un jeu simple et interactif développé en python. Le jeu se joue sur une grille 3x3 avec deux joueurs alternants. 
+                                Lorsqu'un joueur aligne trois symboles identiques horizontalement, verticalement ou diagonalement, il gagne. 
+                                Il comprend une IA pour jouer contre l'utilisateur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts Bootstrap -->
+    <script>
+        // Ajout de l'interactivité pour afficher/masquer le contenu caché
+        document.querySelectorAll('.voir-plus').forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault(); // Empêche le lien de recharger la page
+                const cardBody = this.closest('.card-body');
+                cardBody.classList.toggle('show-more');
+            });
+        });
+    </script>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <!-- alligner en horizontale les liens vers vos réseaux sociaux ici-->
+        <p>&copy; 2024 MY Portfolio.</p>❤️ by Oussama Halima-Filali</p>
+        <p><a href="mailto:oussama.halima-filali@laplateforme.io" target="_blank"><img src="mail.png" alt="Logo Mail"></a></p>
+        <p><a href="https://www.linkedin.com/in/halima-filali-oussama-780a32178/" target="_blank"><img src="ink.png" alt="Logo LinkedIn"></a></p>
+        <p><a href="https://github.com/oussama-filali" target="_blank"><img src="github3.png" alt="Logo GitHub"></a></p>
+    </footer>
+</body>
+</html>

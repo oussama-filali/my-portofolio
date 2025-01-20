@@ -1,0 +1,217 @@
+/* Ajouter une image de fond à toute la page */
+body {
+    background-image: url('code-583073_1280.webp');  /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #f3cc0a;  /* Assurez-vous que le texte soit visible sur le fond */
+    font-family: Arial, sans-serif;
+
+
+
+}
+/* Personnalisation de la photo de profil */
+.profile-photo img {
+    width: 150px;  /* Taille de l'image */
+    height: 150px; /* Taille de l'image */
+    object-fit: cover; /* S'assurer que l'image garde son rapport de forme */
+    border-radius: 50%;  /* Rendre l'image ronde */
+    border: 5px solid #f2ae26;  /* Bordure autour de l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour donner un effet de profondeur */
+}
+
+/* Personnalisation de la boîte de présentation */
+.presentation-box {
+    background-color: #c49fe9; /* Fond blanc */
+    border: 1px solid #ddd; /* Bordure grise autour de la boîte */
+    border-radius: 15px; /* Coins arrondis */
+    padding: 30px; /* Espacement intérieur de la boîte */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre portée douce */
+}
+
+/* Personnalisation du titre dans la boîte de présentation */
+.presentation-box h2 {
+    font-family: 'pacifico', sans-serif;  /* Utilisation de la police Roboto */
+    color: #333;  /* Couleur du texte */
+    font-size: 2rem;  /* Taille du texte */
+    font-weight: bold;
+}
+
+/* Personnalisation du texte dans la boîte de présentation */
+.presentation-box p {
+    font-family: 'pacifico', sans-serif;  /* Police claire */
+    color: #555;  /* Gris pour le texte */
+    font-size: 1.2rem;
+    line-height: 1.6;  /* Espacement entre les lignes */
+}
+
+
+/* Personnalisation de la section principale */
+.container {
+    margin-top: 50px;
+}
+
+.row {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Merriweather', sans-serif;  /* utuliser une police Merriweather */
+    color: #030200;  /* Couleur du texte */
+    text-align: center;  /* Centrer le texte */
+    font-size: 3rem;  /* Ajuster la taille */
+    font-weight: bold;  /* Rendre le texte plus épais */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  /* Ajouter une ombre */
+}
+h2 {
+    font-family: 'pacifico', sans-serif;  /* utiliser une police Pacifico */
+    color: #080808;  /* Couleur du texte */
+    text-align: left;  /* Centrer le texte */
+    font-size: 1.5rem;  /* Ajuster la taille */
+}
+
+p {
+    font-family: 'pacifico', sans-serif;  /* utiliser une police pacifico */
+    color: #060606;  /* Couleur du texte */
+}
+
+
+/* Personnalisation du header */
+header {
+    background-color: #f2ae26;  /* Fond sombre pour le header */
+    color: #f49b26;
+}
+.container-fluid {
+    max-width: 1200px;
+    color: #c49fe9;
+}
+
+/* Personnalisation de la section des recettes */
+#recettes-container {
+    background-image: url('');  /* Image de fond pour les recettes */
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0;  /* Espacement autour de la section */
+}
+
+/* Personnalisation du footer */
+footer {
+    background-color: #c49fe9;  /* Fond sombre pour le footer */
+    color: #c49fe9;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color:#c49fe9
+}
+footer img {
+    width: 50px; /* Ajustez la largeur du logo */
+    height: auto; /* Maintient les proportions */
+}
+
+
+    
+
+/* Personnalisation des cartes */
+.card {
+    border-radius: 15px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body .btn {
+    border-radius: 20px;
+}
+/* Style de base pour les cartes */
+.card {
+    border-radius: 15px;
+    transition: all 0.3s ease; /* Animation fluide */
+}
+
+/* Effet de survol sur les cartes */
+.card:hover {
+    transform: scale(1.05); /* Agrandir légèrement la carte */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Ajouter une ombre pour l'effet */
+}
+
+/* Animation pour la section de présentation (textes et boutons) */
+#recettes-container .col-md-4 {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Effet sur la section de présentation lorsqu'elle est survolée */
+#recettes-container .col-md-4:hover {
+    transform: translateY(-10px);
+     /* Légèrement soulever la carte */
+    opacity: 1;
+}
+#hidden-text{
+    display:none;
+    color:black;
+    position:absolute;
+
+}
+
+
+
+/* Personnalisation des boutons pour l'effet de survol */
+.card-body .btn:hover {
+    background-color: #f49b26;
+     /* Changer la couleur du bouton lors du survol */
+    transition: background-color 0.3s ease;.card-body.show-more .hidden-content {
+    color: red; /* Changez 'red' par la couleur de votre choix */
+}
+
+}
+/* affichage des section en ligne */
+section{
+    display:flex;
+}
+.hidden-content {
+    color: #c49fe9; /* Changez '#c49fe9' par la couleur de votre choix */
+}
+:root {
+    --primary-color: #c49fe9;
+    --secondary-color: #f2ae26;
+    --text-color: #030200;
+    --font-primary: 'Merriweather', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+}
+.pacifico-regular {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .footer-links a {
+    color: var(--primary-color);
+    text-decoration: none
+  
+  
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: none; /* garder l'image de fond sur les écrans mobiles */
+    }
+
+    .profile-photo img {
+        width: 100px; /* Réduire la taille de l'image sur les écrans mobiles */}}
+
+
+
